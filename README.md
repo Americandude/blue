@@ -46,7 +46,13 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 **Times In MST**
 
-7/05/2022 11:04AM `Created Repo and added README.md`
+**7/05/2022**
+
+
+ 11:04AM `Created Repo and added README.md`
+
+
+11:05-11:32AM `gradle was being a pain in the ass and I had to fix it`
 
 
 
