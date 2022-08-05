@@ -16,6 +16,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 ## Checklist
 
 - [x] Create Base Client
+- [ ] Make Keybind system
 - [ ] Create Event Listener stuff
 - [ ] Create test module
 - [ ] Implement ClickGUI
