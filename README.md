@@ -15,7 +15,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 ## Checklist
 
-- [ ] Create Base Client
+- [x] Create Base Client
 - [ ] Create Event Listener stuff
 - [ ] Create test module
 - [ ] Implement ClickGUI
@@ -59,6 +59,9 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 
 11:05-11:32AM `gradle was being a pain in the ass and I had to fix it`
+
+
+11:33-12:20 `HOLY SHIT I DELETED THE OLD REPO FOR NOTHING I FIXED THE BUG IT WAS EASY AND I ALSO FINISHED BASE CLIENT`
 
 
 
