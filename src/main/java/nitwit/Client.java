@@ -3,6 +3,7 @@ package nitwit;
 import java.util.ArrayList;
 
 import nitwit.modules.Module;
+import nitwit.modules.movement.Fly;
 
 public class Client {
 
@@ -11,6 +12,7 @@ public class Client {
 
     public static void startUp(){
         System.out.println("Test startup hook");
+        modules.add(new Fly());
     }
     public static void keyPress(int key){
         for(Module m : modules){

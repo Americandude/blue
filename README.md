@@ -56,13 +56,15 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 **7/05/2022**
 
 
- 11:04AM `Created Repo and added README.md`
+ 1:04PM `Created Repo and added README.md`
 
 
-11:05-11:32AM `gradle was being a pain in the ass and I had to fix it`
+1:05-1:32PM `gradle was being a pain in the ass and I had to fix it`
 
 
-11:33-12:20 `HOLY SHIT I DELETED THE OLD REPO FOR NOTHING I FIXED THE BUG IT WAS EASY AND I ALSO FINISHED BASE CLIENT`
+1:33AM-2:20PM `HOLY SHIT I DELETED THE OLD REPO FOR NOTHING I FIXED THE BUG IT WAS EASY AND I ALSO FINISHED BASE CLIENT`
+
+2:00-2:30PM `added keybind system thing`
 
 
 
