@@ -16,8 +16,8 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 ## Checklist
 
 - [ ] Create Base Client
-- [ ] Create Event Listener stuff (broken atm)
-- [ ] Create test module (untested due to event listener being broken)
+- [ ] Create Event Listener stuff
+- [ ] Create test module
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist

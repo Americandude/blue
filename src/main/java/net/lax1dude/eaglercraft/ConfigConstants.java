@@ -4,10 +4,10 @@ import java.util.List;
 
 public class ConfigConstants {
 	
-	public static boolean profanity = false;
+	public static boolean profanity = true;
 
-	public static final String version = "22w30a";
-	public static final String mainMenuString = "eaglercraft " + version;
+	public static final String version = "v-2.0";
+	public static final String mainMenuString = "NitClient " + version;
 	
 	public static final String forkMe = "https://github.com/LAX1DUDE/eaglercraft";
 
