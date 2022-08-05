@@ -78,6 +78,7 @@ import net.minecraft.src.TextureManager;
 import net.minecraft.src.TexturePackList;
 import net.minecraft.src.Timer;
 import net.minecraft.src.WorldClient;
+import nitwit.Client;
 
 public class Minecraft implements Runnable {
 	
@@ -304,6 +305,9 @@ public class Minecraft implements Runnable {
 		this.checkGLError("Post startup");
 		this.guiAchievement = new GuiAchievement(this);
 		this.ingameGUI = new GuiIngame(this);
+
+		Client.startUp();
+
 		this.voiceOverlay = new GuiVoiceOverlay(this);
 
 		ScaledResolution var2 = new ScaledResolution(this.gameSettings, this.displayWidth, this.displayHeight);
