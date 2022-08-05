@@ -79,6 +79,7 @@ import net.minecraft.src.TexturePackList;
 import net.minecraft.src.Timer;
 import net.minecraft.src.WorldClient;
 import nitwit.Client;
+import nitwit.modules.Module;
 
 public class Minecraft implements Runnable {
 	
@@ -1279,6 +1280,9 @@ public class Minecraft implements Runnable {
 						if (this.currentScreen != null) {
 							this.currentScreen.handleKeyboardInput();
 						} else {
+
+							Client.keyPress(EaglerAdapter.getEventKey());
+
 							if (EaglerAdapter.getEventKey() == 1) {
 								this.displayInGameMenu();
 							}

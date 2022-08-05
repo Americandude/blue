@@ -16,6 +16,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 ## Checklist
 
 - [x] Create Base Client
+- [x] Create Keybind system
 - [ ] Create Event Listener stuff
 - [ ] Create test module
 - [ ] Implement ClickGUI
@@ -34,7 +35,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 1. Install vscode, eclipse, IntelliJ IDEA, or the IDE of your choice.
 
 
-2. Run `git clone https://github.com/ThisIsALegitUsername/ghost-client.git`
+2. Run `git clone https://github.com/ThisIsALegitUsername/ghost-client-v2.git`
 
 
 2a. **Only applies if you're using linux** Run `chmod +x gradlew`
@@ -70,5 +71,5 @@ Feel free to make a pull request, it's best if you add me on discord and tell me
 
 **Client status**:  
 - [ ] Broken
-- [ ] Working
+- [x] Working
 - [ ] N/A

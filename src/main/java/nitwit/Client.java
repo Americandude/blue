@@ -12,4 +12,11 @@ public class Client {
     public static void startUp(){
         System.out.println("Test startup hook");
     }
+    public static void keyPress(int key){
+        for(Module m : modules){
+            if(m.getKey() == key){
+                m.toggle();
+            }
+        }
+    }
 }
