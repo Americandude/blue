@@ -32,13 +32,19 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 ## Installation
 
 1. Install vscode, eclipse, IntelliJ IDEA, or the IDE of your choice.
+
+
 2. Run `git clone https://github.com/ThisIsALegitUsername/ghost-client.git`
+
 
 2a. **Only applies if you're using linux** Run `chmod +x gradlew`
 
+
 3. Run `./gradlew teavm`
 
+
 4. If you're using vscode, install the extension "live server," go to the javascript folder, right click on `index.html`, and click "Open with Live Server"
+
 
 4a. I'm unsure about the process for other IDES, but a surefire way to open is to go into the javascript folder, click on `index.html`, remove the loop that checks for local file opening, download everything in javascript and paste it into the same folder, and finally open `index.html`.
 
@@ -62,3 +68,4 @@ Feel free to make a pull request, it's best if you add me on discord and tell me
 **Client status**:  
 - [ ] Broken
 - [ ] Working
+- [ ] N/A
