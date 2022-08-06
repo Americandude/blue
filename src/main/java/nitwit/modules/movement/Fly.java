@@ -7,7 +7,7 @@ import nitwit.modules.Module;
 @SuppressWarnings("all")
 public class Fly extends Module{
     public Fly(){
-        super("Fly", 33, Category.MOVEMENT);
+        super("Fly", 33, Category.Movement);
     }
 
     public void onEnable(){

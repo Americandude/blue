@@ -145,12 +145,12 @@ public class GameSettings {
 	public GameSettings(Minecraft par1Minecraft) {
 		this.keyBindings = new KeyBinding[] { this.keyBindAttack, this.keyBindUseItem, this.keyBindForward, this.keyBindLeft, this.keyBindBack, this.keyBindRight, this.keyBindJump, this.keyBindSneak, this.keyBindDrop, this.keyBindInventory,
 				this.keyBindChat, this.keyBindPlayerList, this.keyBindPickBlock, this.keyBindSprint, this.keyBindZoom, this.keyBindFunction };
-		this.difficulty = 2;
+		this.difficulty = 1;
 		this.hideGUI = false;
 		this.thirdPersonView = 0;
 		this.showDebugInfo = false;
-		this.showDebugProfilerChart = true;
-		this.showCoordinates = true;
+		this.showDebugProfilerChart = false;
+		this.showCoordinates = false;
 		this.lastServer = "";
 		this.noclip = false;
 		this.smoothCamera = false;

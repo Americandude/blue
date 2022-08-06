@@ -97,6 +97,10 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
  `change license and other stuff text`
 
+ 3:00-3:19PM
+
+ `add fullbright module, make category enum look better`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 

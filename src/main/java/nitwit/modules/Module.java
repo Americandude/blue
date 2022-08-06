@@ -43,9 +43,9 @@ public class Module {
     }
 
     public enum Category {
-        COMBAT,
-        MOVEMENT,
-        RENDER,
+        Combat,
+        Movement,
+        Render,
         Player;
     }
 }
