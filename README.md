@@ -17,14 +17,14 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 - [x] Create Base Client
 - [x] Create Keybind system
-- [ ] Create Event Listener stuff
-- [ ] Create test module
+- [x] Create Event Listener stuff
+- [x] Create test module
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
 - [ ] Add Reach
 - [ ] Add Velocity
-- [ ] Add Flyhack (Maybe)
+- [x] Add Flyhack (Maybe)
 
 
 ~~- [ ] Add Commands~~ Canceled

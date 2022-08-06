@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import net.lax1dude.eaglercraft.LocalStorageManager;
 import net.minecraft.client.Minecraft;
+import nitwit.Client;
+import nitwit.events.EventType;
+import nitwit.events.listeners.EventUpdate;
 
 public class EntityPlayerSP extends EntityPlayer {
 	public MovementInput movementInput;
@@ -143,6 +146,9 @@ public class EntityPlayerSP extends EntityPlayer {
 				this.ySize = 0.2F;
 			}
 
+			EventUpdate e = new EventUpdate();
+			e.setType(EventType.PRE);
+			Client.onEvent(e);
 			this.pushOutOfBlocks(this.posX - (double) this.width * 0.35D, this.boundingBox.minY + 0.5D, this.posZ + (double) this.width * 0.35D);
 			this.pushOutOfBlocks(this.posX - (double) this.width * 0.35D, this.boundingBox.minY + 0.5D, this.posZ - (double) this.width * 0.35D);
 			this.pushOutOfBlocks(this.posX + (double) this.width * 0.35D, this.boundingBox.minY + 0.5D, this.posZ - (double) this.width * 0.35D);
