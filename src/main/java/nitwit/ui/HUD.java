@@ -1,22 +1,26 @@
 package nitwit.ui;
 
-import java.util.ArrayList;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.ScaledResolution;
 import nitwit.Client;
+import nitwit.modules.Module;
 
-@SuppressWarnings("all")
-public class HUD {
+public class HUD{
 
-    public int x;
-    public int y;
-    public int z;
-    public Minecraft mc = Minecraft.getMinecraft();
-    public static ArrayList<Minecraft> mine = new ArrayList<Minecraft>();
+    public static Minecraft mc = Minecraft.getMinecraft();
+    public ScaledResolution sr;
 
     public void draw(){
-        Minecraft.getMinecraft().fontRenderer.drawString(Client.name, 0, -5, -1);
-    }
+        mc = Minecraft.getMinecraft();
+        sr = new ScaledResolution(mc.gameSettings, mc.displayWidth, mc.displayHeight);
+        mc.fontRenderer.drawString(Client.name, 8, 8, -1);
 
+        for(Module m : Client.modules){
+            if(!m.toggled)
+                continue;
+
+            mc.fontRenderer.drawString(m.name, sr.getScaledWidth() - mc.fontRenderer.getStringWidth(m.name) - 4, 4, -1);
+        }
+
+    }
 }

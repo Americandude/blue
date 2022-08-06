@@ -89,6 +89,9 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
  `add autosprint (J) how did it take me that long wtf`
 
+ 9:00-10:46
+ `added module list, thx @yeetmanlord#7675 for helping me fix my code lol`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 
