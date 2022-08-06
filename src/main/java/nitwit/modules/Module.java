@@ -3,6 +3,7 @@ package nitwit.modules;
 import net.minecraft.client.Minecraft;
 import nitwit.events.Event;
 
+@SuppressWarnings("all")
 public class Module {
     public String name;
     public boolean toggled;
@@ -18,10 +19,6 @@ public class Module {
 
     public void onEvent(Event e){
 
-    }
-
-    public boolean isEnabled(){
-        return toggled;
     }
 
     public int getKey(){

@@ -76,6 +76,13 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
  `finished lots of stuff: Events, fixed Keybind, updated Module and Client class, created event listeners and added event check every tick, added test module`
 
+
+ **07/06/2022**
+
+ 6:50-7:50AM (why is developing a client my entire fucking life now)
+
+ `I spent an hour of my life writing 12 lines of code and debugging it`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 

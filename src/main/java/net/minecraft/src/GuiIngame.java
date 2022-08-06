@@ -12,6 +12,7 @@ import net.lax1dude.eaglercraft.TextureLocation;
 import net.lax1dude.eaglercraft.adapter.Tessellator;
 import net.lax1dude.eaglercraft.glemu.EffectPipeline;
 import net.minecraft.client.Minecraft;
+import nitwit.Client;
 
 public class GuiIngame extends Gui {
 	private static RenderItem itemRenderer = null;
@@ -469,10 +470,12 @@ public class GuiIngame extends Gui {
 				int offset2 = this.mc.isChatOpen() ? 4 : 0;
 				String str = "not using an xbox live account";
 				var8.drawStringWithShadow(str, (var6 * 4 / 3) - 2 - var8.getStringWidth(str) - offset, 2 + offset2, 0xFFDDDD);
-				str = "eaglercraft: " + ConfigConstants.version;
+				str = Client.name + ConfigConstants.version;
 				var8.drawStringWithShadow(str, (var6 * 4 / 3) - 2 - var8.getStringWidth(str) - offset, 12 + offset2, 14737632);
 			}
 			
+			Client.hud.draw();
+
 			EaglerAdapter.glPopMatrix();
 		}
 
