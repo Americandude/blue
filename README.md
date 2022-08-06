@@ -85,7 +85,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
  `I spent an hour of my life writing 12 lines of code and debugging it`
 
- 8:00-8:30AM 
+ 8:30-8:50AM 
 
  `add autosprint (J) how did it take me that long wtf`
 
