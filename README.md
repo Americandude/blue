@@ -21,6 +21,9 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Create test module
 - [x] Add Flyhack
 - [x] Add AutoSprint
+- [x] Add Fullbright
+- [x] Add WaterMark
+- [x] add half assed arraylist
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
