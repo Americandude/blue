@@ -1,5 +1,6 @@
 package nitwit.ui;
 
+import net.lax1dude.eaglercraft.EaglerAdapter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.ScaledResolution;
 import nitwit.Client;
@@ -13,7 +14,9 @@ public class HUD{
     public void draw(){
         mc = Minecraft.getMinecraft();
         sr = new ScaledResolution(mc.gameSettings, mc.displayWidth, mc.displayHeight);
-        mc.fontRenderer.drawString(Client.name, 8, 8, -1);
+        
+        
+        mc.fontRenderer.drawString(Client.name + Client.version, 4, 4, -1);
 
         for(Module m : Client.modules){
             if(!m.toggled)

@@ -43,24 +43,24 @@ public class GuiScreenLicense extends GuiScreen {
 		
 		EaglerAdapter.glPushMatrix();
 		EaglerAdapter.glScalef(1.33f, 1.33f, 1.33f);
-		drawCenteredString(fontRenderer, new String(License.line00), width * 3 / 8, beginOffset * 3 / 4, 0xDDDD55);
+		drawCenteredString(fontRenderer, new String("\"I sure hope nobody left clicks and replaces"), width * 3 / 8, beginOffset * 3 / 4, 0xDDDD55);
 		EaglerAdapter.glPopMatrix();
 		
-		drawCenteredString(fontRenderer, new String(License.line10), width / 2, beginOffset + 22, 0xFF7777);
-		drawCenteredString(fontRenderer, new String(License.line11), width / 2, beginOffset + 33, 0xFF7777);
-		drawCenteredString(fontRenderer, new String(License.line12), width / 2, beginOffset + 44, 0xFF7777);
+		drawCenteredString(fontRenderer, new String("License.line.x with two quotation marks and some text\""), width / 2, beginOffset + 22, 0xFF7777);
+		drawCenteredString(fontRenderer, new String(""), width / 2, beginOffset + 33, 0xFF7777);
+		drawCenteredString(fontRenderer, new String("-lax1dude"), width / 2, beginOffset + 44, 0xFF7777);
 
-		drawCenteredString(fontRenderer, new String(License.line20), width / 2, beginOffset + 62, 0x448844);
-		drawCenteredString(fontRenderer, new String(License.line21), width / 2, beginOffset + 71, 0x448844);
+		drawCenteredString(fontRenderer, new String(""), width / 2, beginOffset + 62, 0x448844);
+		drawCenteredString(fontRenderer, new String("https://i.imgflip.com/52q8nf.jpg"), width / 2, beginOffset + 71, 0x448844);
 
 		EaglerAdapter.glPushMatrix();
 		EaglerAdapter.glScalef(0.75f, 0.75f, 0.75f);
-		drawCenteredString(fontRenderer, new String(License.line30), width * 4 / 6, (beginOffset + 89) * 4 / 3, 0x666666);
-		drawCenteredString(fontRenderer, new String(License.line31), width * 4 / 6, (beginOffset + 97) * 4 / 3, 0x999999);
-		drawCenteredString(fontRenderer, new String(License.line32), width * 4 / 6, (beginOffset + 105) * 4 / 3, 0x999999);
+		drawCenteredString(fontRenderer, new String("insert inspirational quote here"), width * 4 / 6, (beginOffset + 89) * 4 / 3, 0x666666);
+		drawCenteredString(fontRenderer, new String("uh idk what to put here"), width * 4 / 6, (beginOffset + 97) * 4 / 3, 0x999999);
+		drawCenteredString(fontRenderer, new String("fun fact this is a fun fact which contains a fun fact about a fun fact containing a fun fact but the fun fact in the fun fact isn't actually fun so it isn't a fun fact therefore this is not a fun fact inside a fun fact"), width * 4 / 6, (beginOffset + 105) * 4 / 3, 0x999999);
 		EaglerAdapter.glPopMatrix();
 		
-		drawCenteredString(fontRenderer, new String(License.line40), width / 2, beginOffset + 120, 0xFF7777);
+		drawCenteredString(fontRenderer, new String("click the square box or death"), width / 2, beginOffset + 120, 0xFF7777);
 		
 		boolean mouseOverCheck = width / 2 - 100 < mx && width / 2 - 83 > mx && beginOffset + 142 < my && beginOffset + 159 > my;
 		
@@ -87,7 +87,7 @@ public class GuiScreenLicense extends GuiScreen {
 		
 		EaglerAdapter.glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
 		
-		drawString(fontRenderer, new String(License.line50), width / 2 - 75, beginOffset + 147, 0xEEEEEE);
+		drawString(fontRenderer, new String("click the box now"), width / 2 - 75, beginOffset + 147, 0xEEEEEE);
 	}
 	
 	protected void mouseClicked(int par1, int par2, int par3) {

@@ -58,6 +58,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 
  1:04PM 
+
  `Created Repo and added README.md`
 
 
@@ -68,7 +69,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 1:33AM-2:20PM
 
- `HOLY SHIT I DELETED THE OLD REPO FOR NOTHING I FIXED THE BUG IT WAS EASY AND I ALSO FINISHED BASE CLIENT` (for context i was basically done with the base client and then it errored so i though i had to start over.)
+ `HOLY SHIT I DELETED THE OLD REPO FOR NOTHING I FIXED THE BUG IT WAS EASY AND I ALSO FINISHED BASE CLIENT` (for context i was basically done with the base client and then it errored so i thought i had to start over.)
 
 2:00-2:30PM 
 
@@ -89,8 +90,12 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
  `add autosprint (J) how did it take me that long wtf`
 
- 9:00-10:46
+ 9:00-10:46AM
  `added module list, thx @yeetmanlord#7675 for helping me fix my code lol`
+
+ 1:40-1:52PM
+
+ `change license and other stuff text`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.

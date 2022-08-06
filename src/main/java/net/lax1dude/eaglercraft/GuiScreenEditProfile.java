@@ -29,44 +29,44 @@ public class GuiScreenEditProfile extends GuiScreen {
 	private static final TextureLocation gui = new TextureLocation("/gui/gui.png");
 	
 	public static final String[] defaultOptions = new String[] {
-			"Default Steve",
-			"Default Alex",
-			"Tennis Steve",
-			"Tennis Alex",
-			"Tuxedo Steve",
-			"Tuxedo Alex",
-			"Athlete Steve",
-			"Athlete Alex",
-			"Cyclist Steve",
-			"Cyclist Alex",
-			"Boxer Steve",
-			"Boxer Alex",
-			"Prisoner Steve",
-			"Prisoner Alex",
-			"Scottish Steve",
-			"Scottish Alex",
-			"Developer Steve",
-			"Developer Alex",
-			"Herobrine",
-			"Enderman",
-			"Skeleton",
-			"Blaze",
-			"Barney",
-			"Slime",
-			"Noob",
-			"Trump",
-			"Notch",
-			"Creeper",
-			"Zombie",
-			"Pig",
-			"Squid",
-			"Mooshroom",
-			"Villager",
-			"Long Arms",
-			"Weird Climber",
-			"Laxative Dude",
-			"Baby Charles",
-			"Baby Winston"
+			"Decent skin 1",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"Decent skin 2",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"Decent skin 3",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"good skin 1",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote",
+			"bad skin downvote"
 	};
 
 	public static final int newDefaultNotice = defaultOptions.length - 5;
@@ -344,7 +344,7 @@ public class GuiScreenEditProfile extends GuiScreen {
 			nbt.setByteArray("data", EaglerProfile.capes.get(i).data);
 			capes.setTag(EaglerProfile.capes.get(i).name, nbt);
 		}
-		LocalStorageManager.profileSettingsStorage.setCompoundTag("capes", capes);
+		LocalStorageManager.profileSettingsStorage.setCompoundTag("back fabric", capes);
 		
 		LocalStorageManager.saveStorageP();
 	}

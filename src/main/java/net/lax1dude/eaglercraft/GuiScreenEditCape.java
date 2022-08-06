@@ -41,7 +41,7 @@ public class GuiScreenEditCape extends GuiScreen {
 			"dB"
 	};
 	
-	protected String screenTitle = "Select Cape";
+	protected String screenTitle = "Select colored felt placed on back";
 	
 	private GuiScreen parent;
 	private int skinToShow;
