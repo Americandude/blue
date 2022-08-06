@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import nitwit.events.Event;
 import nitwit.modules.Module;
+import nitwit.modules.movement.AutoSprint;
 import nitwit.modules.movement.Fly;
 import nitwit.ui.HUD;
 
@@ -17,6 +18,7 @@ public class Client {
     public static void startUp(){
         System.out.println("Test startup hook");
         modules.add(new Fly());
+        modules.add(new AutoSprint());
     }
 
     public static void onEvent(Event e){

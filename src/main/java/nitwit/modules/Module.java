@@ -2,6 +2,7 @@ package nitwit.modules;
 
 import net.minecraft.client.Minecraft;
 import nitwit.events.Event;
+import nitwit.events.listeners.EventUpdate;
 
 @SuppressWarnings("all")
 public class Module {
@@ -34,7 +35,7 @@ public class Module {
     }
 
     public void onEnable(){
-
+        
     }
 
     public void onDisable(){

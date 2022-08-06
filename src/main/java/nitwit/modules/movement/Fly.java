@@ -4,6 +4,7 @@ import nitwit.events.Event;
 import nitwit.events.listeners.EventUpdate;
 import nitwit.modules.Module;
 
+@SuppressWarnings("all")
 public class Fly extends Module{
     public Fly(){
         super("Fly", 33, Category.MOVEMENT);
