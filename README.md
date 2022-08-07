@@ -48,10 +48,10 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 ## Keybinds
 
-i'm just used to codercraft keybinds so i set them the same
-
 Fly: F
+
 Fullbright: M
+
 AutoSprint J
 
 ## Installation
