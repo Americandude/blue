@@ -38,9 +38,9 @@ public class HUD{
         EaglerAdapterGL30.glTranslatef(4, 4, 0);
         EaglerAdapterGL30.glScalef(1.5F, 1.5F, 1);
         EaglerAdapterGL30.glTranslatef(-4, -4, 0);
-        fr.drawString(Client.name + " " + Client.version, 4, 4, -1);
+        fr.drawString(Client.name + " " + Client.version, 4, 4, 0x255188, true);
         EaglerAdapterGL30.glScalef(1, 1, 1);
-        fr.drawString(Minecraft.debugFPS + " FPS", 4, 15, -1);
+        fr.drawString(Minecraft.debugFPS + " FPS", 4, 15, 0x255188, true);
         EaglerAdapterGL30.glTranslatef(4, 4, 0);
         EaglerAdapterGL30.glScalef(0.80F, 0.80F, 1);
         EaglerAdapterGL30.glTranslatef(-4, -4, 0);

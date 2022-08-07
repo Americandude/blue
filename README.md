@@ -142,9 +142,13 @@ AutoSprint J
 
  `lmfao i spent 3 hours trying to get the modules to render on the right side of the screen, the reason it took so long was because i had to fix a shitty error that had a very simple solution, but it was hard to debug. also added fps counter removed coordinate thing :D`
 
-4:10-4:36
+4:10-4:36PM
 
 `Finished ArrayList, made it sort from greatest to least bc im too lazy to reorder modules.add`
+
+4:50-5:16PM
+
+`added color to some stuff and also a shadow`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
