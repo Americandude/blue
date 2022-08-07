@@ -27,7 +27,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add better half assed Arraylist
 - [x] Remove coordinate and all the random shit on top left
 - [x] Add Keybind section in readme
-- [ ] Add actually decent ArrayList
+- [x] Add actually decent ArrayList
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
@@ -134,7 +134,11 @@ AutoSprint J
 
  1:30-3:36PM
 
- `lmfao i spent 2 hours trying to get the modules to render on the right side of the screen, the reason it took so long was because i had to fix a shitty error that had a very simple solution, but it was hard to debug. also added fps counter and more watermarks :D`
+ `lmfao i spent 3 hours trying to get the modules to render on the right side of the screen, the reason it took so long was because i had to fix a shitty error that had a very simple solution, but it was hard to debug. also added fps counter removed coordinate thing :D`
+
+4:10-4:36
+
+`Finished ArrayList, made it sort from greatest to least bc im too lazy to reorder the modules.add`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
