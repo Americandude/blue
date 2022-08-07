@@ -24,6 +24,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add Fullbright
 - [x] Add WaterMark
 - [x] Add half assed ArrayList
+- [x] Add better half assed Arraylist
 - [ ] Add actually decent ArrayList
 - [ ] Figure out how the fuck i'm supposed to install lwjgl onto this thing
 - [ ] Remove coordinate and all the random shit on top left
@@ -34,12 +35,20 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [ ] Add Velocity
 - [ ] Add FastBow
 - [ ] Add Regen
-- [ ] copy tenacity's ui
+- [ ] improve ui
 - [ ] Start making a blatant client
 
 
 ~~- [ ] Add Commands~~ Canceled
 
+
+## Keybinds
+
+i'm just used to codercraft keybinds so i set them the same
+
+Fly: F
+Fullbright: M
+AutoSprint J
 
 ## Installation
 
@@ -59,6 +68,8 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 
 
 4a. I'm unsure about the process for other IDES, but a surefire way to open is to go into the javascript folder, click on `index.html`, remove the loop that checks for local file opening, download everything in javascript and paste it into the same folder, and finally open `index.html`.
+
+1. simpler way is to just download what's in the javascript folder, delete the loop thing i was talking about, and then run index.html
 
 ## Progress Log
 
@@ -101,7 +112,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
  `add autosprint (J) how did it take me that long wtf`
 
  9:00-10:46AM
- `added module list, thx @yeetmanlord#7675 for helping me fix my code lol`
+ `added module list, thx @yeetmanlord for helping me fix my code lol`
 
  1:40-1:52PM
 
