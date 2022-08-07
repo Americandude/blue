@@ -35,6 +35,9 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [ ] Add Velocity
 - [ ] Add FastBow
 - [ ] Add Regen
+- [ ] Add Killaura(?)
+- [ ] Add more movement modules
+- [ ] Add rainbow wave thing to arraylist
 - [ ] Improve ui
 - [ ] Finish Client
 - [ ] Start making a blatant client
