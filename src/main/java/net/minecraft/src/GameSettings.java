@@ -595,7 +595,7 @@ public class GameSettings {
 		yee.setFloat("chatScale", this.chatScale);
 		yee.setFloat("chatWidth", this.chatWidth);
 		yee.setBoolean("patchAnisotropic", this.patchAnisotropic);
-		yee.setBoolean("showCoordinates", this.showCoordinates);
+		yee.setBoolean("showCoordinates", false);
 		yee.setBoolean("showSkinJacket", showSkinJacket);
 		yee.setBoolean("showSkinHat", showSkinHat);
 		yee.setBoolean("showSkinLeftArm", showSkinLeftArm);

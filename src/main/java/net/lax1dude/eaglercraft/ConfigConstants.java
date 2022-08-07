@@ -6,10 +6,10 @@ public class ConfigConstants {
 	
 	public static boolean profanity = true;
 
-	public static final String version = "v2.0";
+	public static final String version = "v1.1";
 	public static final String mainMenuString = "NitClient " + version;
 	
-	public static final String forkMe = "https://pornhub.com";
+	public static final String forkMe = "https://github.com/ThisIsALegitUsername/ghost-client-v2";
 
 	public static final boolean html5build = true;
 	

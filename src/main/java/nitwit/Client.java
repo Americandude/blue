@@ -14,10 +14,9 @@ import nitwit.ui.HUD;
 public class Client {
 
     public static ArrayList<Module> modules = new ArrayList<Module>();
-    public static String name = "NitClient", version = "v-2.0";
+    public static String name = "NitClient", version = "v1.1";
     public static HUD hud = new HUD();
     private static Minecraft mc = Minecraft.getMinecraft();
-
     public static void startUp(){
         System.out.println("Test startup hook");
         modules.add(new Fly());

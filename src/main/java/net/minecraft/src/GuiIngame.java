@@ -459,18 +459,18 @@ public class GuiIngame extends Gui {
 		}else {
 			EaglerAdapter.glPushMatrix();
 			EaglerAdapter.glScalef(0.75f, 0.75f, 0.75f);
-			var8.drawStringWithShadow(this.mc.renderGlobal.getDebugInfoShort(), 2, 2, 16777215);
+			var8.drawStringWithShadow(this.mc.renderGlobal.getDebugInfoShort(), 9999, 9999, 16777215);
 			
 			if(mc.gameSettings.showCoordinates) {
-				var8.drawStringWithShadow("x: "+MathHelper.floor_double(this.mc.thePlayer.posX)+", y: "+MathHelper.floor_double(this.mc.thePlayer.posY)+", z: "+MathHelper.floor_double(this.mc.thePlayer.posZ), 2, 12, 16777215);
+				var8.drawStringWithShadow("x: "+MathHelper.floor_double(this.mc.thePlayer.posX)+", y: "+MathHelper.floor_double(this.mc.thePlayer.posY)+", z: "+MathHelper.floor_double(this.mc.thePlayer.posZ), 9999, 9999, 16777215);
 			}
 			
 			if(mc.currentScreen == null || !(mc.currentScreen instanceof GuiIngameMenu)) {
 				int offset = this.mc.isChatOpen() ? 135 : 0;
 				int offset2 = this.mc.isChatOpen() ? 4 : 0;
-				String str = "not using an xbox live account";
+				String str = "t" + "o" + ":" + " " + "s" + "k" + "i" + "d" + "s";
 				var8.drawStringWithShadow(str, (var6 * 4 / 3) - 2 - var8.getStringWidth(str) - offset, 2 + offset2, 0xFFDDDD);
-				str = Client.name + ConfigConstants.version;
+				str = "t" + "r" + "y" + " " + "t" + "o" + " " + "c" + "h" + "a" + "n" + "g" + "e" + " " + "this" + " " +  "string" + " " + "l" + "m" + "f" + "a" + "o";
 				var8.drawStringWithShadow(str, (var6 * 4 / 3) - 2 - var8.getStringWidth(str) - offset, 12 + offset2, 14737632);
 			}
 			
