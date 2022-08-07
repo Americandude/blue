@@ -56,6 +56,12 @@ AutoSprint J
 
 ## Installation
 
+### small brain installation
+
+1. just download what's in the javascript folder, delete the loop that checks for local file opening, and then run index.html
+
+### big brain installation
+
 1. Install vscode, eclipse, IntelliJ IDEA, or the IDE of your choice.
 
 
@@ -73,7 +79,6 @@ AutoSprint J
 
 4a. I'm unsure about the process for other IDES, but a surefire way to open is to go into the javascript folder, click on `index.html`, remove the loop that checks for local file opening, download everything in javascript and paste it into the same folder, and finally open `index.html`.
 
-1. simpler way is to just download what's in the javascript folder, delete the loop thing i was talking about, and then run index.html
 
 ## Progress Log
 
@@ -116,6 +121,7 @@ AutoSprint J
  `add autosprint (J) how did it take me that long wtf`
 
  9:00-10:46AM
+
  `added module list, thx @yeetmanlord for helping me fix my code lol`
 
  1:40-1:52PM
@@ -138,7 +144,7 @@ AutoSprint J
 
 4:10-4:36
 
-`Finished ArrayList, made it sort from greatest to least bc im too lazy to reorder the modules.add`
+`Finished ArrayList, made it sort from greatest to least bc im too lazy to reorder modules.add`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
