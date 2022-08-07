@@ -23,12 +23,19 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add AutoSprint
 - [x] Add Fullbright
 - [x] Add WaterMark
-- [x] add half assed arraylist
+- [x] Add half assed ArrayList
+- [ ] Add actually decent ArrayList
+- [ ] Figure out how the fuck i'm supposed to install lwjgl onto this thing
+- [ ] Remove coordinate and all the random shit on top left
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
 - [ ] Add Reach
 - [ ] Add Velocity
+- [ ] Add FastBow
+- [ ] Add Regen
+- [ ] copy tenacity's ui
+- [ ] Start making a blatant client
 
 
 ~~- [ ] Add Commands~~ Canceled
@@ -103,6 +110,12 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
  3:00-3:19PM
 
  `add fullbright module, make category enum look better`
+
+ **07/07/2022**
+
+ 7:46-7:48
+
+ `update readme checklist`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
