@@ -25,9 +25,9 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add WaterMark
 - [x] Add half assed ArrayList
 - [x] Add better half assed Arraylist
+- [x] Remove coordinate and all the random shit on top left
+- [x] Add Keybind section in readme
 - [ ] Add actually decent ArrayList
-- [ ] Figure out how the fuck i'm supposed to install lwjgl onto this thing
-- [ ] Remove coordinate and all the random shit on top left
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
@@ -35,7 +35,8 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [ ] Add Velocity
 - [ ] Add FastBow
 - [ ] Add Regen
-- [ ] improve ui
+- [ ] Improve ui
+- [ ] Finish Client
 - [ ] Start making a blatant client
 
 
