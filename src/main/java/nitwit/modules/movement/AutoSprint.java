@@ -15,13 +15,15 @@ public class AutoSprint extends Module{
     }
 
     public void onDisable(){
-        mc.thePlayer.setSprinting(false);
+        mc.thePlayer.setSprinting(mc.gameSettings.keyBindSprint.isPressed());
     }
 
     public void onEvent(Event e){
         if(e instanceof EventUpdate){
             if(e.isPre()){
-                mc.thePlayer.setSprinting(true);
+                if(!mc.thePlayer.isCollidedHorizontally && !mc.thePlayer.isUsingItem() && !mc.thePlayer.isSneaking()){
+                    mc.thePlayer.setSprinting(true);
+                }
             }
         }
     }

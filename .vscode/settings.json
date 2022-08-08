@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 65536
+    "liveServer.settings.port": 65536,
+    "java.dependency.packagePresentation": "hierarchical"
 }

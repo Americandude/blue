@@ -1,6 +1,5 @@
 package nitwit.ui;
 
-import java.util.Collections;
 import java.util.Comparator;
 
 import net.lax1dude.eaglercraft.glemu.EaglerAdapterGL30;
@@ -15,6 +14,8 @@ public class HUD{
     public static Minecraft mc = Minecraft.getMinecraft();
     public ScaledResolution sr;
     public FontRenderer fr;
+
+    /*use if java 1.6:
     public static class ModuleOrder implements Comparator<Module>{
         @Override
         public int compare(Module arg0, Module arg1){
@@ -26,7 +27,7 @@ public class HUD{
             }
             return 0;
         }
-    }
+    }*/
 
     public void draw(){
 
@@ -45,7 +46,11 @@ public class HUD{
         EaglerAdapterGL30.glScalef(0.80F, 0.80F, 1);
         EaglerAdapterGL30.glTranslatef(-4, -4, 0);
 
-        Collections.sort(Client.modules, new ModuleOrder());
+        //use if java 1.6: Collections.sort(Client.modules, new ModuleOrder());
+
+        Client.modules.sort(Comparator.comparingInt(m ->
+            fr.getStringWidth(((Module)m).name)).reversed()
+        );
 
         int mcount = 0;
 

@@ -28,6 +28,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Remove coordinate and all the random shit on top left
 - [x] Add Keybind section in readme
 - [x] Add actually decent ArrayList
+- [x] Add NoFall
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
@@ -52,7 +53,9 @@ Fly: F
 
 Fullbright: M
 
-AutoSprint J
+AutoSprint: J
+
+NoFall: G
 
 ## Installation
 
@@ -149,6 +152,10 @@ AutoSprint J
 4:50-5:16PM
 
 `added color to some stuff and also a shadow`
+
+7:20-7:56PM
+
+`Fixed fly, made sprint bypass, add nofall, shorten code for module sorting in arraylist`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.

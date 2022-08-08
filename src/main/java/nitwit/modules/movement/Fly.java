@@ -10,20 +10,14 @@ public class Fly extends Module{
         super("Fly", 33, Category.Movement);
     }
 
-    public void onEnable(){
-        mc.thePlayer.capabilities.allowFlying = true;
-        mc.thePlayer.capabilities.isFlying = true;
-    }
-
     public void onDisable(){
-        mc.thePlayer.capabilities.allowFlying = false;
         mc.thePlayer.capabilities.isFlying = false;
     }
 
     public void onEvent(Event e){
         if(e instanceof EventUpdate){
             if(e.isPre()){
-
+                mc.thePlayer.capabilities.isFlying = true;
             }
         }
     }

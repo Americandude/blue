@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import net.minecraft.client.Minecraft;
 import nitwit.events.Event;
 import nitwit.modules.Module;
-import nitwit.modules.movement.AutoSprint;
-import nitwit.modules.movement.Fly;
-import nitwit.modules.render.Fullbright;
+import nitwit.modules.movement.*;
+import nitwit.modules.player.*;
+import nitwit.modules.render.*;
 import nitwit.ui.HUD;
 
 @SuppressWarnings("all")
@@ -22,6 +22,7 @@ public class Client {
         modules.add(new Fly());
         modules.add(new Fullbright());
         modules.add(new AutoSprint());
+        modules.add(new NoFall());
     }
 
     public static void onEvent(Event e){
