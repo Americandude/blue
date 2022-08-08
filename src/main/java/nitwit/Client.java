@@ -7,6 +7,7 @@ import net.minecraft.client.Minecraft;
 import nitwit.events.Event;
 import nitwit.modules.Module;
 import nitwit.modules.Module.Category;
+import nitwit.modules.combat.*;
 import nitwit.modules.movement.*;
 import nitwit.modules.player.*;
 import nitwit.modules.render.*;
@@ -25,6 +26,7 @@ public class Client {
         modules.add(new Fullbright());
         modules.add(new AutoSprint());
         modules.add(new NoFall());
+        modules.add(new KillAura());
     }
 
     public static void onEvent(Event e){

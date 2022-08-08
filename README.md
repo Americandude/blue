@@ -57,6 +57,8 @@ AutoSprint: J
 
 NoFall: G
 
+Killaura: K 
+
 ## Installation
 
 ### small brain installation
@@ -160,6 +162,11 @@ NoFall: G
 8:05-8:10PM
 
 `make enums better`
+
+**07/08/2022**
+
+1:00PM-2:03
+`add killaura`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.

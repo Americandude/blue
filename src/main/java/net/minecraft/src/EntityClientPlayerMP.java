@@ -1,6 +1,10 @@
 package net.minecraft.src;
 
 import net.minecraft.client.Minecraft;
+import nitwit.Client;
+import nitwit.events.EventType;
+import nitwit.events.listeners.EventMotion;
+import nitwit.events.listeners.EventUpdate;
 
 public class EntityClientPlayerMP extends EntityPlayerSP {
 	public NetClientHandler sendQueue;
@@ -88,34 +92,45 @@ public class EntityClientPlayerMP extends EntityPlayerSP {
 		boolean var13 = var3 * var3 + var5 * var5 + var7 * var7 > 9.0E-4D || this.field_71168_co >= 20;
 		boolean var14 = var9 != 0.0D || var11 != 0.0D;
 
+		EventUpdate e = new EventUpdate();
+			e.setType(EventType.PRE);
+			Client.onEvent(e);
+
+			EventMotion event = new EventMotion(this.posX, this.posZ, this.rotationYaw, this.rotationPitch, this.onGround);
+			event.setType(EventType.PRE);
+			Client.onEvent(event);
+
 		if (this.ridingEntity != null) {
-			this.sendQueue.addToSendQueue(new Packet13PlayerLookMove(this.motionX, -999.0D, -999.0D, this.motionZ, this.rotationYaw, this.rotationPitch, this.onGround));
+			this.sendQueue.addToSendQueue(new Packet13PlayerLookMove(this.motionX, -999.0D, -999.0D, this.motionZ, event.getYaw(), event.getPitch(), this.onGround));
 			var13 = false;
 		} else if (var13 && var14) {
-			this.sendQueue.addToSendQueue(new Packet13PlayerLookMove(this.posX, this.boundingBox.minY, this.posY, this.posZ, this.rotationYaw, this.rotationPitch, this.onGround));
+			this.sendQueue.addToSendQueue(new Packet13PlayerLookMove(this.posX, this.boundingBox.minY, this.posY, this.posZ, event.getYaw(), event.getPitch(), this.onGround));
 		} else if (var13) {
 			this.sendQueue.addToSendQueue(new Packet11PlayerPosition(this.posX, this.boundingBox.minY, this.posY, this.posZ, this.onGround));
 		} else if (var14) {
-			this.sendQueue.addToSendQueue(new Packet12PlayerLook(this.rotationYaw, this.rotationPitch, this.onGround));
+			this.sendQueue.addToSendQueue(new Packet12PlayerLook(event.getYaw(), event.getPitch(), event.isOnGround()));
 		} else {
 			this.sendQueue.addToSendQueue(new Packet10Flying(this.onGround));
 		}
 
 		++this.field_71168_co;
-		this.wasOnGround = this.onGround;
+		this.wasOnGround = event.isOnGround();
 
 		if (var13) {
-			this.oldPosX = this.posX;
-			this.oldMinY = this.boundingBox.minY;
+			this.oldPosX = event.getX();
+			this.oldMinY = event.getY();
 			this.oldPosY = this.posY;
-			this.oldPosZ = this.posZ;
+			this.oldPosZ = event.getZ();
 			this.field_71168_co = 0;
 		}
 
 		if (var14) {
-			this.oldRotationYaw = this.rotationYaw;
-			this.oldRotationPitch = this.rotationPitch;
+			this.oldRotationYaw = event.getYaw();
+			this.oldRotationPitch = event.getPitch();
 		}
+
+		event.setType(EventType.POST);
+			Client.onEvent(event);
 	}
 
 	/**
