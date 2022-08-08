@@ -29,6 +29,7 @@ public class Client {
         modules.add(new KillAura());
         modules.add(new AutoWalk());
         modules.add(new Speed());
+        modules.add(new Velocity());
     }
 
     public static void onEvent(Event e){

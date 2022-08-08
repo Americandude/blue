@@ -36,7 +36,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
 - [ ] Add Reach
-- [ ] Add Velocity
+- [x] Add Velocity
 - [ ] Add FastBow
 - [ ] Add Regen
 - [ ] Add more movement modules
@@ -64,6 +64,8 @@ Killaura: K
 AutoWalk: L
 
 Speed: B
+
+Velocity: V
 
 ## Installation
 
@@ -178,6 +180,10 @@ Speed: B
 4:13-4:33PM
 
 `Add Speed and AutoWalk`
+
+4:35-4:48PM
+
+`add Velocity`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
