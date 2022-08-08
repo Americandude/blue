@@ -157,6 +157,10 @@ NoFall: G
 
 `Fixed fly, made sprint bypass, add nofall, shorten code for module sorting in arraylist`
 
+8:05-8:10PM
+
+`make enums better`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 

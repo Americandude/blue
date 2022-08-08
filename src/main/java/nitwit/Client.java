@@ -1,10 +1,12 @@
 package nitwit;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import net.minecraft.client.Minecraft;
 import nitwit.events.Event;
 import nitwit.modules.Module;
+import nitwit.modules.Module.Category;
 import nitwit.modules.movement.*;
 import nitwit.modules.player.*;
 import nitwit.modules.render.*;
@@ -40,5 +42,16 @@ public class Client {
                 m.toggle();
             }
         }
+    }
+
+    public List<Module> getModulesByCategory(Category c){
+         List<Module> modules = new ArrayList<Module>();
+
+         for(Module m : this.modules){
+            if(m.category == c)
+            modules.add(m);
+
+         }
+         return modules;
     }
 }
