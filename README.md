@@ -29,6 +29,9 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add Keybind section in readme
 - [x] Add actually decent ArrayList
 - [x] Add NoFall
+- [x] Add Killaura
+- [x] Add AutoWalk
+- [x] Add Speed
 - [ ] Implement ClickGUI
 - [ ] Add Autoclicker
 - [ ] Add Aimassist
@@ -36,7 +39,6 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [ ] Add Velocity
 - [ ] Add FastBow
 - [ ] Add Regen
-- [ ] Add Killaura(?)
 - [ ] Add more movement modules
 - [ ] Add rainbow wave thing to arraylist
 - [ ] Improve ui
@@ -58,6 +60,10 @@ AutoSprint: J
 NoFall: G
 
 Killaura: K 
+
+AutoWalk: L
+
+Speed: B
 
 ## Installation
 
@@ -165,8 +171,13 @@ Killaura: K
 
 **07/08/2022**
 
-1:00PM-2:03
+1:00-2:03PM
+
 `add killaura`
+
+4:13-4:33PM
+
+`Add Speed and AutoWalk`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
