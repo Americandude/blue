@@ -245,30 +245,30 @@ public class FontRenderer {
 	/**
 	 * Draws the specified string with a shadow.
 	 */
-	public int drawStringWithShadow(String par1Str, int par2, int par3, int par4) {
-		return this.drawString(par1Str, par2, par3, par4, true);
+	public int drawStringWithShadow(String par1Str, float x, float y, int par4) {
+		return this.drawString(par1Str, x, y, par4, true);
 	}
 
 	/**
 	 * Draws the specified string.
 	 */
-	public int drawString(String par1Str, int par2, int par3, int par4) {
-		return this.drawString(par1Str, par2, par3, par4, false);
+	public int drawString(String par1Str, double x, double y, int par4) {
+		return this.drawString(par1Str, x, y, par4, false);
 	}
 
 	/**
 	 * Draws the specified string. Args: string, x, y, color, dropShadow
 	 */
-	public int drawString(String par1Str, int par2, int par3, int par4, boolean par5) {
+	public int drawString(String par1Str, double x, double y, int par4, boolean par5) {
 		this.resetStyles();
 
 		int var6;
 
 		if (par5) {
-			var6 = this.renderString(par1Str, par2 + 1, par3 + 1, par4, true);
-			var6 = Math.max(var6, this.renderString(par1Str, par2, par3, par4, false));
+			var6 = this.renderString(par1Str, x + 1, y + 1, par4, true);
+			var6 = Math.max(var6, this.renderString(par1Str, x, y, par4, false));
 		} else {
-			var6 = this.renderString(par1Str, par2, par3, par4, false);
+			var6 = this.renderString(par1Str, x, y, par4, false);
 		}
 
 		return var6;
@@ -437,7 +437,7 @@ public class FontRenderer {
 	 * Render single line string by setting GL color, current (posX,posY), and
 	 * calling renderStringAtPos()
 	 */
-	private int renderString(String par1Str, int par2, int par3, int par4, boolean par5) {
+	private int renderString(String par1Str, double d, double e, int par4, boolean par5) {
 		if (par1Str == null) {
 			return 0;
 		} else {
@@ -454,8 +454,8 @@ public class FontRenderer {
 			this.green = (float) (par4 & 255) / 255.0F;
 			this.alpha = (float) (par4 >> 24 & 255) / 255.0F;
 			EaglerAdapter.glColor4f(this.red, this.blue, this.green, this.alpha);
-			this.posX = (float) par2;
-			this.posY = (float) par3;
+			this.posX = (float) d;
+			this.posY = (float) e;
 			this.renderStringAtPos(par1Str, par5);
 			return (int) this.posX;
 		}

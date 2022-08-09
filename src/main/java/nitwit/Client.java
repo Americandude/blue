@@ -3,6 +3,8 @@ package nitwit;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.Hero.clickgui.ClickGUI;
+import de.Hero.settings.SettingsManager;
 import net.minecraft.client.Minecraft;
 import nitwit.events.Event;
 import nitwit.modules.Module;
@@ -18,9 +20,16 @@ public class Client {
 
     public static ArrayList<Module> modules = new ArrayList<Module>();
     public static String name = "NitClient", version = "v1.1";
+    public static Client instance = new Client();
     public static HUD hud = new HUD();
     private static Minecraft mc = Minecraft.getMinecraft();
+    public static SettingsManager settingsManager;
+    public static ClickGUI clickGUI;
+
     public static void startUp(){
+        settingsManager = new SettingsManager();
+        clickGUI = new ClickGUI();
+
         System.out.println("Test startup hook");
         modules.add(new Fly());
         modules.add(new Fullbright());
@@ -30,6 +39,7 @@ public class Client {
         modules.add(new AutoWalk());
         modules.add(new Speed());
         modules.add(new Velocity());
+        modules.add(new ClickGui());
     }
 
     public static void onEvent(Event e){

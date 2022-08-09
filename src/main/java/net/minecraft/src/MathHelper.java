@@ -101,6 +101,11 @@ public class MathHelper {
 		return par0 < par1 ? par1 : (par0 > par2 ? par2 : par0);
 	}
 
+	public static double clamp_double(double num, double min, double max)
+    {
+        return num < min ? min : (num > max ? max : num);
+    }
+
 	/**
 	 * Maximum of the absolute value of two numbers.
 	 */

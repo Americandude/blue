@@ -11,11 +11,22 @@ public class Module {
     public int keyBind;
     public Category category;
     public Minecraft mc = Minecraft.getMinecraft();
+    private int key;
     
-    public Module(String name, int key, Category cat){
+    public Module(String name, int key, Category c){
         this.name = name;
         this.keyBind = key;
-        this.category = cat;
+        this.category = c;
+        category = c;
+        name = name;
+    }
+
+    public String getName() {
+		return name;
+	}
+
+    public boolean isToggled(){
+        return toggled;
     }
 
     public void onEvent(Event e){
@@ -25,6 +36,10 @@ public class Module {
     public int getKey(){
         return keyBind;
     }
+
+    public void setKey(int key) {
+		this.key = key;
+	}
 
     public void toggle(){
         toggled = !toggled;
@@ -53,5 +68,17 @@ public class Module {
         Category(String name){
             this.name = name;
         }
+    }
+
+    public Category getCategory(){
+        return category;
+    }
+
+    public void setCategory(Category category){
+        this.category = category;
+    }
+
+    public void setup(){
+
     }
 }

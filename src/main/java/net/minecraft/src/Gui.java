@@ -30,19 +30,19 @@ public class Gui {
 	 * Draws a solid color rectangle with the specified coordinates and color. Args:
 	 * x1, y1, x2, y2, color
 	 */
-	public static void drawRect(int par0, int par1, int par2, int par3, int par4) {
-		int var5;
+	public static void drawRect(double x, double y, double d, double e, int par4) {
+		double var5;
 
-		if (par0 < par2) {
-			var5 = par0;
-			par0 = par2;
-			par2 = var5;
+		if (x < d) {
+			var5 = x;
+			x = d;
+			d = var5;
 		}
 
-		if (par1 < par3) {
-			var5 = par1;
-			par1 = par3;
-			par3 = var5;
+		if (y < e) {
+			var5 = y;
+			y = e;
+			e = var5;
 		}
 
 		float var10 = (float) (par4 >> 24 & 255) / 255.0F;
@@ -55,10 +55,10 @@ public class Gui {
 		EaglerAdapter.glBlendFunc(EaglerAdapter.GL_SRC_ALPHA, EaglerAdapter.GL_ONE_MINUS_SRC_ALPHA);
 		EaglerAdapter.glColor4f(var6, var7, var8, var10);
 		var9.startDrawingQuads();
-		var9.addVertex((double) par0, (double) par3, 0.0D);
-		var9.addVertex((double) par2, (double) par3, 0.0D);
-		var9.addVertex((double) par2, (double) par1, 0.0D);
-		var9.addVertex((double) par0, (double) par1, 0.0D);
+		var9.addVertex((double) x, (double) e, 0.0D);
+		var9.addVertex((double) d, (double) e, 0.0D);
+		var9.addVertex((double) d, (double) y, 0.0D);
+		var9.addVertex((double) x, (double) y, 0.0D);
 		var9.draw();
 		EaglerAdapter.glEnable(EaglerAdapter.GL_TEXTURE_2D);
 		EaglerAdapter.glDisable(EaglerAdapter.GL_BLEND);
