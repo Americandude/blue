@@ -8,10 +8,8 @@ import java.util.Collections;
 import net.lax1dude.eaglercraft.EaglerAdapter;
 import net.lax1dude.eaglercraft.glemu.EaglerAdapterGL30;
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.Gui;
 import net.minecraft.src.GuiScreen;
-import net.minecraft.src.OpenGlHelper;
 import net.minecraft.src.ScaledResolution;
 import nitwit.Client;
 import nitwit.modules.Module;
@@ -232,7 +230,7 @@ public class ClickGUI extends GuiScreen {
 	}
 
 	@Override
-	public void mouseReleased(int mouseX, int mouseY, int state) {
+	public void mouseMovedOrUp(int mouseX, int mouseY, int state) {
 		if(mb != null)return;
 
 		for (Panel panel : rpanels) {
@@ -251,7 +249,7 @@ public class ClickGUI extends GuiScreen {
 			p.mouseReleased(mouseX, mouseY, state);
 		}
 
-		super.mouseReleased(mouseX, mouseY, state);
+		super.mouseMovedOrUp(mouseX, mouseY, state);
 	}
 
 	@Override
@@ -271,15 +269,7 @@ public class ClickGUI extends GuiScreen {
 			}
 		}
 
-		/*
-		 * keyTyped in GuiScreen MUSS aufgerufen werden, damit 
-		 * man mit z.B. ESCAPE aus dem GUI gehen kann
-		 */
-		try {
-			super.keyTyped(typedChar, keyCode);
-		} catch (IOException e2) {
-			e2.printStackTrace();
-		}
+		super.keyTyped(typedChar, keyCode);
 	}
 
 	@Override

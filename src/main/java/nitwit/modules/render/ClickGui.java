@@ -10,7 +10,7 @@ import nitwit.modules.Module;
 public class ClickGui extends Module{
 
         public ClickGui() {
-        super("ClickGui", 0x36, Category.Render);
+        super("ClickGui", 0x19, Category.Render);
     }
 
     public void setup() {
