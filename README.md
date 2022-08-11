@@ -216,7 +216,7 @@ AutoclickerNew: I
 
 4:10-4:40PM
 
-`add settings gui for a few module`
+`add settings gui for a few module + add kind of working nametags`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.

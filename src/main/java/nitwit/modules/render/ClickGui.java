@@ -16,9 +16,9 @@ public class ClickGui extends Module{
         options.add("default");
         Client.settingsManager.rSetting(new Setting("Design", this, "New", options));
         Client.settingsManager.rSetting(new Setting("Sound", this, false));
-        Client.settingsManager.rSetting(new Setting("GuiRed", this, 0, 0, 255, true));
-        Client.settingsManager.rSetting(new Setting("GuiGreen", this, 0, 0, 255, true));
-        Client.settingsManager.rSetting(new Setting("GuiBlue", this, 0, 0, 255, true));
+        Client.settingsManager.rSetting(new Setting("GuiRed", this, 255, 0, 255, true));
+        Client.settingsManager.rSetting(new Setting("GuiGreen", this, 255, 0, 255, true));
+        Client.settingsManager.rSetting(new Setting("GuiBlue", this, 255, 0, 255, true));
     }
 
     public void onDisable(){
