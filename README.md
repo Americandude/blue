@@ -32,7 +32,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add Killaura
 - [x] Add AutoWalk
 - [x] Add Speed
-- [ ] Implement ClickGUI
+- [x] Implement ClickGUI
 - [x] Add Autoclicker
 - [ ] Add Aimassist
 - [ ] Add Reach
@@ -218,6 +218,6 @@ AutoclickerNew: I
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 
 **Client status**:  
-- [x] Broken
-- [ ] Working
+- [ ] Broken
+- [x] Working
 - [ ] N/A
