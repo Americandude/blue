@@ -30,8 +30,8 @@ public class RenderManager {
 	/** Rendermanager's variable for the player */
 	public EntityLiving livingPlayer;
 	public EntityLiving field_96451_i;
-	public float playerViewY;
-	public float playerViewX;
+	public static float playerViewY;
+	public static float playerViewX;
 
 	/** Reference to the GameSettings object. */
 	public GameSettings options;

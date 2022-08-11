@@ -25,6 +25,7 @@ public class Client {
     private static Minecraft mc = Minecraft.getMinecraft();
     public static SettingsManager settingsManager;
     public static ClickGUI clickGUI;
+    public static ClickGUI speed;
 
     public static void startUp(){
         settingsManager = new SettingsManager();
@@ -41,8 +42,11 @@ public class Client {
         modules.add(new ClickGui());
         modules.add(new AutoClicker());
         modules.add(new AutoClickerNew());
+        modules.add(new Nametags());
 
         clickGUI = new ClickGUI();
+        speed = new ClickGUI();
+
     }
 
     public static void onEvent(Event e){
