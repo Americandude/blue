@@ -23,13 +23,10 @@ public class ClickGui extends Module{
     }
 
     public void onDisable(){
-        mc.currentScreen.onGuiClosed();
+        mc.displayGuiScreen(null);
     }
 
     public void onEnable() {
-        super.onEnable();
-
         mc.displayGuiScreen(Client.clickGUI);
-        toggle();
     }
 }

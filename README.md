@@ -210,6 +210,10 @@ AutoclickerNew: I
 
 `when you spend 6+ hours of your life debugging an error only to realize it's because you put the code in the wrong order anyway FINALLY ADDED CLICKGUI (you can't close it im working on fix)`
 
+2:50-3:00PM
+
+`make clickgui closeable`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 
