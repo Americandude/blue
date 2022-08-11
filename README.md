@@ -67,7 +67,7 @@ Speed: B
 
 Velocity: V
 
-ClickGUI: P (not done, will crash ur game)
+ClickGUI: P
 
 Autoclicker: O
 AutoclickerNew: I
