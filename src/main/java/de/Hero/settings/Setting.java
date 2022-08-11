@@ -13,6 +13,7 @@ import nitwit.modules.Module;
  *
  *  @author HeroCode
  */
+
 public class Setting {
 	
 	private String name;

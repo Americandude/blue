@@ -33,7 +33,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add AutoWalk
 - [x] Add Speed
 - [ ] Implement ClickGUI
-- [ ] Add Autoclicker
+- [x] Add Autoclicker
 - [ ] Add Aimassist
 - [ ] Add Reach
 - [x] Add Velocity
@@ -67,7 +67,10 @@ Speed: B
 
 Velocity: V
 
-ClickGUI: Right Shift
+ClickGUI: P (not done, will crash ur game)
+
+Autoclicker: O
+AutoclickerNew: I
 
 ## Installation
 
@@ -192,6 +195,14 @@ ClickGUI: Right Shift
 10:40-11:45AM
 
 `try to add clickgui, it's broken but i'm commiting in case i fuck up`
+
+**07/10/2022**
+
+`i spent all day on the clickgui getting it to work and it didn't`
+
+**07/11/2022**
+
+`postpone clickgui and add autoclicker`
 
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.

@@ -1,9 +1,7 @@
 package de.Hero.clickgui.util;
 
-import java.awt.Color;
-
 import nitwit.Client;
-
+import nitwit.modules.util.render.Color;
 
 /**
  *  Made by HeroCode
@@ -15,6 +13,6 @@ import nitwit.Client;
 public class ColorUtil {
 	
 	public static Color getClickGUIColor(){
-		return new Color((int)Client.instance.settingsManager.getSettingByName("GuiRed").getValDouble(), (int)Client.instance.settingsManager.getSettingByName("GuiGreen").getValDouble(), (int)Client.instance.settingsManager.getSettingByName("GuiBlue").getValDouble());
+		return new Color((int)Client.settingsManager.getSettingByName("GuiRed").getValDouble(), (int)Client.settingsManager.getSettingByName("GuiGreen").getValDouble(), (int)Client.settingsManager.getSettingByName("GuiBlue").getValDouble());
 	}
 }

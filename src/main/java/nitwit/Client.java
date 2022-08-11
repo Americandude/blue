@@ -40,6 +40,8 @@ public class Client {
         modules.add(new Speed());
         modules.add(new Velocity());
         modules.add(new ClickGui());
+        modules.add(new AutoClicker());
+        modules.add(new AutoClickerNew());
     }
 
     public static void onEvent(Event e){

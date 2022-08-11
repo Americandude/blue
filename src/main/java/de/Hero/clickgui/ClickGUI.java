@@ -1,6 +1,5 @@
 package de.Hero.clickgui;
 
-import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,6 +13,7 @@ import net.minecraft.src.ScaledResolution;
 import nitwit.Client;
 import nitwit.modules.Module;
 import nitwit.modules.Module.Category;
+import nitwit.modules.util.render.Color;
 import de.Hero.clickgui.elements.Element;
 import de.Hero.clickgui.elements.ModuleButton;
 import de.Hero.clickgui.elements.menu.ElementSlider;
@@ -39,18 +39,8 @@ public class ClickGUI extends GuiScreen {
 		return keyName[key];
 	}
 	
-	/*
-	 * Konstrukor sollte nur einmal aufgerufen werden => in der MainMethode des eigenen Codes
-	 * hier Client.startClient()
-	 * das GUI wird dann so ge�ffnet: 
-	 * 		mc.displayGuiScreen(Client.clickgui);
-	 * 		this.setToggled(false);
-	 * das Module wird sofort wieder beendet damit
-	 * n�chstes mal nicht 2mal der z.B. 'RSHIFT' Knopf gedr�ckt
-	 * werden muss
-	 */
 	public ClickGUI() {
-		setmgr = Client.instance.settingsManager;
+		setmgr = Client.settingsManager;
 		
 		FontUtil.setupFontUtils();
 		panels = new ArrayList<Panel>();
@@ -59,10 +49,7 @@ public class ClickGUI extends GuiScreen {
 		double px = 10;
 		double py = 10;
 		double pyplus = pheight + 10;
-		
-		/*
-		 * Zum Sortieren der Panels einfach die Reihenfolge im Enum �ndern ;)
-		 */
+
 		for (Category c : Category.values()) {
 			String title = Character.toUpperCase(c.name().toLowerCase().charAt(0)) + c.name().toLowerCase().substring(1);
 			ClickGUI.panels.add(new Panel(title, px, py, pwidth, pheight, false, this) {
@@ -77,16 +64,6 @@ public class ClickGUI extends GuiScreen {
 			py += pyplus;
 		}
 		
-		/*
-		 * Wieso nicht einfach
-		 * 		rpanels = panels;
-		 * 		Collections.reverse(rpanels);
-		 * Ganz eifach:
-		 * 		durch diese Zuweisung wird rpanels einfach nur eine Weiterleitung
-		 * 		zu panels, was mit 'Collections.reverse(rpanels);' nicht ganz 
-		 * 		funktionieren w�rde. Und da die Elemente nur 'r�berkopiert' werden
-		 * 		gibt es keine Probleme ;)
-		 */
 		rpanels = new ArrayList<Panel>();
 		for (Panel p : panels) {
 			rpanels.add(p);
@@ -97,14 +74,7 @@ public class ClickGUI extends GuiScreen {
 
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-		/*
-		 * Panels und damit auch Buttons rendern.
-		 * panels wird NUR hier im Code verwendet, da das
-		 * zuletzt gerenderte Panel ganz oben ist 
-		 * Auch wenn es manchmal egal w�re ob panels/rpanels
-		 * benutzt wird habe ich mich einfach mal dazu entschieden,
-		 * einfach weil es einfacher ist nur einmal panels zu benutzen
-		 */
+
 		for (Panel p : panels) {
 			p.drawScreen(mouseX, mouseY, partialTicks);
 		}
@@ -117,11 +87,6 @@ public class ClickGUI extends GuiScreen {
 		/*															*/ EaglerAdapter.glPopMatrix();
 		
 		mb = null;
-		/*
-		 * �berpr�fen ob ein Button listening == true hat, wenn
-		 * ja, dann soll nicht mehr gesucht werden, nicht dass 
-		 * 1+ auf listening steht...
-		 */
 		listen:
 		for (Panel p : panels) {
 			if (p != null && p.visible && p.extended && p.Elements != null
@@ -135,11 +100,6 @@ public class ClickGUI extends GuiScreen {
 			}
 		}
 		
-		/*
-		 * Settings rendern. Da Settings �ber alles gerendert werden soll,
-		 * abgesehen vom ListeningOverlay werden die Elements von hier aus
-		 * fast am Schluss gerendert
-		 */
 		for (Panel panel : panels) {
 			if (panel.extended && panel.visible && panel.Elements != null) {
 				for (ModuleButton b : panel.Elements) {
@@ -151,7 +111,7 @@ public class ClickGUI extends GuiScreen {
 						for (Element e : b.menuelements) {
 							e.offset = off;
 							e.update();
-							if(Client.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")){
+							if(Client.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")){
 								Gui.drawRect(e.x, e.y, e.x + e.width + 2, e.y + e.height, outlineColor);
 							}
 							e.drawScreen(mouseX, mouseY, partialTicks);
@@ -179,35 +139,15 @@ public class ClickGUI extends GuiScreen {
 			FontUtil.drawTotalCenteredStringWithShadow("by nitwit", 0, 20, 0xffffffff);
 			EaglerAdapterGL30.glPopMatrix();
 		}
-		
-		/*
-		 * Nicht ben�tigt, aber es ist so einfach sauberer ;)
-		 * Und ohne diesen call k�nnen keine GUIButtons/andere Elemente
-		 * gerendert werden
-		 */
+
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 
 	@Override
 	public void mouseClicked(int mouseX, int mouseY, int mouseButton) {
-		/*
-		 * Damit man nicht nochmal den Listeningmode aktivieren kann,
-		 * wenn er schon aktiviert ist
-		 */
+
 		if(mb != null)return;
 		
-		/*
-		 * Ben�tigt damit auch mit Elements interagiert werden kann
-		 * besonders zu beachten ist dabei, dass zum einen rpanels aufgerufen
-		 * wird welche eine Eigenst�ndige Kopie von panels ist, genauer oben erkl�rt
-		 * Also rpanels damit zuerst das panel 'untersucht' wird, dass als letztes
-		 * gerendert wurde => Ganz oben ist!
-		 * sodass der Nutzer nicht mit dem Unteren interagiern kann, weil er es wohl
-		 * nicht will. Und damit nicht einfach mit Panels  anstatt Elements interagiert wird
-		 * werden hier nur die Settings untersucht. Und wenn wirklich interagiert wurde, dann
-		 * endet diese Methode hier.
-		 * Das ist auch in anderen Loops zu beobachten
-		 */
 		for (Panel panel : rpanels) {
 			if (panel.extended && panel.visible && panel.Elements != null) {
 				for (ModuleButton b : panel.Elements) {
@@ -254,9 +194,7 @@ public class ClickGUI extends GuiScreen {
 
 	@Override
 	protected void keyTyped(char typedChar, int keyCode) {
-		/*
-		 * Ben�tigt f�r die Keybindfunktion
-		 */
+
 		for (Panel p : rpanels) {
 			if (p != null && p.visible && p.extended && p.Elements != null && p.Elements.size() > 0) {
 				for (ModuleButton e : p.Elements) {

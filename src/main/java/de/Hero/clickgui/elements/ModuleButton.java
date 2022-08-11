@@ -1,6 +1,6 @@
 package de.Hero.clickgui.elements;
 
-import java.awt.Color;
+import nitwit.modules.util.render.Color;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -51,8 +51,8 @@ public class ModuleButton {
 		 *  irgendeinen Aufwand bestimmen welches Element
 		 *  f�r ein Setting ben�tigt wird :>
 		 */
-		if (Client.instance.settingsManager.getSettingsByMod(imod) != null)
-			for (Setting s : Client.instance.settingsManager.getSettingsByMod(imod)) {
+		if (Client.settingsManager.getSettingsByMod(imod) != null)
+			for (Setting s : Client.settingsManager.getSettingsByMod(imod)) {
 				if (s.isCheck()) {
 					menuelements.add(new ElementCheckBox(this, s));
 				} else if (s.isSlider()) {
@@ -109,7 +109,7 @@ public class ModuleButton {
 		if (mouseButton == 0) {
 			mod.toggle();
 			
-			if(Client.instance.settingsManager.getSettingByName("Sound").getValBoolean())
+			if(Client.settingsManager.getSettingByName("Sound").getValBoolean())
 			Minecraft.getMinecraft().thePlayer.playSound("random.click", 0.5f, 0.5f);
 		} else if (mouseButton == 1) {
 			/*
@@ -118,10 +118,10 @@ public class ModuleButton {
 			 */
 			if (menuelements != null && menuelements.size() > 0) {
 				boolean b = !this.extended;
-				Client.instance.clickGUI.closeAllSettings();
+				Client.clickGUI.closeAllSettings();
 				this.extended = b;
 				
-				if(Client.instance.settingsManager.getSettingByName("Sound").getValBoolean())
+				if(Client.settingsManager.getSettingByName("Sound").getValBoolean())
 				if(extended)Minecraft.getMinecraft().thePlayer.playSound("tile.piston.out", 1f, 1f);else Minecraft.getMinecraft().thePlayer.playSound("tile.piston.in", 1f, 1f);
 			}
 		} else if (mouseButton == 2) {

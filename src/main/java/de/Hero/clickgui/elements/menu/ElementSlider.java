@@ -1,6 +1,6 @@
 package de.Hero.clickgui.elements.menu;
 
-import java.awt.Color;
+import nitwit.modules.util.render.Color;
 
 import de.Hero.clickgui.elements.Element;
 import de.Hero.clickgui.elements.ModuleButton;

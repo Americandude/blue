@@ -1,7 +1,6 @@
 package de.Hero.clickgui.elements;
 
 import de.Hero.clickgui.ClickGUI;
-import de.Hero.clickgui.elements.menu.ElementComboBox;
 import de.Hero.clickgui.util.FontUtil;
 import de.Hero.settings.Setting;
 
@@ -41,7 +40,7 @@ public class Element {
 		height = 15;
 		
 		/*
-		 * Title der Box bestimmen und falls nötig die Breite der CheckBox
+		 * Title der Box bestimmen und falls nï¿½tig die Breite der CheckBox
 		 * erweitern
 		 */
 		String sname = set.getName();

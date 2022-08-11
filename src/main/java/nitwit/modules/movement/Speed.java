@@ -23,8 +23,9 @@ public class Speed extends Module{
         if(e instanceof EventUpdate){
             if(e.isPre()){
                 if(mc.thePlayer.onGround) {
-                    mc.thePlayer.motionX *= 1.30f;
-                    mc.thePlayer.motionZ *= 1.30f;
+                    mc.thePlayer.motionX *= 2.69f;
+                    mc.thePlayer.motionZ *= 2.69f;
+                    mc.thePlayer.motionY *= 2.69f;
                 }
             }
         }
