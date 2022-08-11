@@ -11,9 +11,7 @@ public class ClickGui extends Module{
 
         public ClickGui() {
         super("ClickGui", 0x19, Category.Render);
-    }
 
-    public void setup() {
         ArrayList<String> options = new ArrayList<>();
         options.add("New");
         options.add("test");
@@ -22,6 +20,10 @@ public class ClickGui extends Module{
         Client.settingsManager.rSetting(new Setting("GuiRed", this, 255, 0, 255, true));
         Client.settingsManager.rSetting(new Setting("GuiGreen", this, 26, 0, 255, true));
         Client.settingsManager.rSetting(new Setting("GuiBlue", this, 42, 0, 255, true));
+    }
+
+    public void onDisable(){
+        mc.currentScreen.onGuiClosed();
     }
 
     public void onEnable() {

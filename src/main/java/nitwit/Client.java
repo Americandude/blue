@@ -28,7 +28,6 @@ public class Client {
 
     public static void startUp(){
         settingsManager = new SettingsManager();
-        clickGUI = new ClickGUI();
 
         System.out.println("Test startup hook");
         modules.add(new Fly());
@@ -42,6 +41,8 @@ public class Client {
         modules.add(new ClickGui());
         modules.add(new AutoClicker());
         modules.add(new AutoClickerNew());
+
+        clickGUI = new ClickGUI();
     }
 
     public static void onEvent(Event e){
