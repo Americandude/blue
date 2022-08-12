@@ -78,9 +78,9 @@ public class Panel {
 		
 		if (this.extended && !Elements.isEmpty()) {
 			double startY = y + height;
-			int epanelcolor = Client.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New") ? 0xff232323 : Client.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("JellyLike") ? 0xbb151515 : 0;;
+			int epanelcolor = Client.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New") ? 0xff232323 : Client.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("JellyLike") ? 0xbb151515 : 0;;
 			for (ModuleButton et : Elements) {
-				if(Client.instance.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")){
+				if(Client.settingsManager.getSettingByName("Design").getValString().equalsIgnoreCase("New")){
 					Gui.drawRect(x - 2, startY, x + width, startY + et.height + 1, outlineColor);
 				}
 				Gui.drawRect(x, 	startY, x + width, startY + et.height + 1, epanelcolor);

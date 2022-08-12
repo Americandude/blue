@@ -43,14 +43,7 @@ public class ModuleButton {
 		height = Minecraft.getMinecraft().fontRenderer.FONT_HEIGHT + 2;
 		parent = pl;
 		menuelements = new ArrayList<Element>();
-		/*
-		 * Settings wurden zuvor in eine ArrayList eingetragen
-		 * dieses SettingSystem hat 3 Konstruktoren je nach
-		 *  verwendetem Konstruktor �ndert sich die Value
-		 *  bei .isCheck() usw. so kann man ganz einfach ohne
-		 *  irgendeinen Aufwand bestimmen welches Element
-		 *  f�r ein Setting ben�tigt wird :>
-		 */
+
 		if (Client.settingsManager.getSettingsByMod(imod) != null)
 			for (Setting s : Client.settingsManager.getSettingsByMod(imod)) {
 				if (s.isCheck()) {
@@ -71,11 +64,6 @@ public class ModuleButton {
 		Color temp = ColorUtil.getClickGUIColor();
 		int color = new Color(temp.getRed(), temp.getGreen(), temp.getBlue(), 150).getRGB();
 		
-		/*
-		 * Ist das Module an, wenn ja dann soll
-		 *  #ein neues Rechteck in Gr��e des Buttons den Knopf als Toggled kennzeichnen
-		 *  #sich der Text anders f�rben
-		 */
 		int textcolor = 0xffafafaf;
 		if (mod.isToggled()) {
 			Gui.drawRect(x - 2, y, x + width + 2, y + height + 1, color);
