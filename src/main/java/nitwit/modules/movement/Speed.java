@@ -26,7 +26,6 @@ public class Speed extends Module{
         if(e instanceof EventUpdate){
             if(e.isPre()){
                 if(mc.thePlayer.onGround) {
-        
                     for(int i = 0; i < Client.settingsManager.getSettingByName("Speed").getValDouble(); i++){
                     mc.thePlayer.motionX *= 1.1f;
                     mc.thePlayer.motionZ *= 1.1f;

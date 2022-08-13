@@ -218,6 +218,12 @@ AutoclickerNew: I
 
 `add settings gui for a few module + add kind of working nametags`
 
+**07/12/2022**
+
+6:44-7:42PM
+
+`Completely rewrite and overcomplicate overclicker, add settings for it, change default gui color, add kinda working reach`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 
