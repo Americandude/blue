@@ -152,6 +152,11 @@ public class EaglerAdapterGL30 extends EaglerAdapterImpl2 {
 	private static float colorG = 1.0f;
 	private static float colorB = 1.0f;
 	private static float colorA = 1.0f;
+
+	private static double colorR1 = 1.0D;
+	private static double colorG1 = 1.0D;
+	private static double colorB1 = 1.0D;
+	private static double colorA1 = 1.0D;
 	
 	private static float normalX = 1.0f;
 	private static float normalY = 0.0f;
@@ -447,6 +452,14 @@ public class EaglerAdapterGL30 extends EaglerAdapterImpl2 {
 		colorB = p3;
 		colorA = p4;
 	}
+
+	public static final void glColor4d(double p11, double p22, double p33, double p44) {
+		colorR1 = p11;
+		colorG1 = p22;
+		colorB1 = p33;
+		colorA1 = p44;
+	}
+
 	public static final int glGetError() {
 		int err = _wglGetError();
 		if(err == _wGL_CONTEXT_LOST_WEBGL) return GL_CONTEXT_LOST_WEBGL;

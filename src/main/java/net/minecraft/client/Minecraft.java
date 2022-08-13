@@ -101,6 +101,7 @@ public class Minecraft implements Runnable {
 	public WorldClient theWorld;
 	public RenderGlobal renderGlobal;
 	public EntityClientPlayerMP thePlayer;
+	private RenderManager renderManager;
 
 	/**
 	 * The Entity from which the renderer determines the render viewpoint. Currently
@@ -302,6 +303,7 @@ public class Minecraft implements Runnable {
 		EaglerAdapter.glViewport(0, 0, this.displayWidth, this.displayHeight);
 		this.effectRenderer = new EffectRenderer(this.theWorld, this.renderEngine);
 		EffectPipeline.init();
+		this.renderManager = new RenderManager();
 
 		this.checkGLError("Post startup");
 		this.guiAchievement = new GuiAchievement(this);
@@ -1845,6 +1847,11 @@ public class Minecraft implements Runnable {
 	public boolean isIntegratedServerRunning() {
 		return this.integratedServerIsRunning;
 	}
+
+	public RenderManager getRenderManager()
+    {
+        return this.renderManager;
+    }
 
 	/**
 	 * Returns true if there is only one player playing, and the current server is

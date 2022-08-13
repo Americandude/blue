@@ -312,4 +312,9 @@ public abstract class Render {
 
 	public void updateIcons(IconRegister par1IconRegister) {
 	}
+
+	public RenderManager getRenderManager()
+    {
+        return this.renderManager;
+    }
 }
