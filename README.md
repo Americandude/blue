@@ -35,11 +35,11 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Implement ClickGUI
 - [x] Add Autoclicker
 - [ ] Add Aimassist
-- [ ] Add Reach
+- [x] Add Reach
 - [x] Add Velocity
 - [ ] Add FastBow
 - [ ] Add Regen
-- [ ] Add more movement modules
+- [x] Add more movement modules
 - [ ] Add rainbow wave thing to arraylist
 - [ ] Improve ui
 - [ ] Finish Client
