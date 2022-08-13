@@ -62,16 +62,14 @@ public class AutoClickerNew extends Module {
 
     public void onEvent(Event e){
         if(e instanceof EventUpdate){
-
+            this.minCPSValue.setValue(Client.settingsManager.getSettingByName("Min CPS").getValDouble());
+            this.maxCPSValue.setValue(Client.settingsManager.getSettingByName("Max CPS").getValDouble());
             if(e.isPre()){
                 if (System.currentTimeMillis() - this.leftLastSwing >= this.leftDelay) {
                     if (this.leftValue.asBoolean() && System.currentTimeMillis() - this.leftLastSwing >= this.leftDelay) {
                         mc.clickMouse(0);
                         this.leftLastSwing = System.currentTimeMillis();
                         this.leftDelay = TimeUtils.randomClickDelay(this.minCPSValue.asInteger(), this.maxCPSValue.asInteger());
-
-                        AutoClickerNew.this.minCPSValue.setValue(Client.settingsManager.getSettingByName("Min CPS").getValDouble());
-                        AutoClickerNew.this.maxCPSValue.setValue(Client.settingsManager.getSettingByName("Max CPS").getValDouble());
                     }
                 }
                 

@@ -224,6 +224,10 @@ AutoclickerNew: I
 
 `Completely rewrite and overcomplicate overclicker, add settings for it, change default gui color, add kinda working reach`
 
+9:40-10:38AM
+
+`Make reach actually work, add settings for it, improve autoclicker`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 
