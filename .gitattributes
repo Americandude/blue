@@ -5,6 +5,3 @@
 *.bat           text eol=crlf
 *.sh            text eol=lf
 gradlew         text eol=lf
-
-*.html linguist-vendored
-*.htm linguist-vendored
