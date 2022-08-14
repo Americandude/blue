@@ -232,6 +232,10 @@ idk-idkPM
 
 `skid esp util because no way in hell am i learning opengl, attempt autoclickernew fix`
 
+9:00-10:26PM
+
+`make killaura very cracked, kinda fix esp idk i haven't tested it, add settings for stuff, fix reach, add esp`
+
 ### Contribution
 Feel free to make a pull request, it's best if you add me on discord and tell me what you changed, since I don't have the time to sift through hundreds of files.
 

@@ -26,6 +26,7 @@ public class Setting {
 	private boolean bval;
 	
 	private double dval;
+	private float fval;
 	private double min;
 	private double max;
 	private boolean onlyint = false;
@@ -93,6 +94,17 @@ public class Setting {
 
 	public void setValDouble(double in){
 		this.dval = in;
+	}
+
+	public float getValFloat(){
+		if(this.onlyint){
+			this.fval = (int)fval;
+		}
+		return this.fval;
+	}
+
+	public void setValFloat(float in1){
+		this.fval = in1;
 	}
 	
 	public double getMin(){

@@ -376,7 +376,7 @@ public class EntityRenderer {
 	/**
 	 * sets up player's eye (or camera in third person mode)
 	 */
-	private void orientCamera(float par1) {
+	public void orientCamera(float par1) {
 		EntityLiving var2 = this.mc.renderViewEntity;
 		float var3 = var2.yOffset - 1.62F;
 		double var4 = var2.prevPosX + (var2.posX - var2.prevPosX) * (double) par1;

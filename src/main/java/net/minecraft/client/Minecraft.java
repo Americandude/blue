@@ -96,7 +96,7 @@ public class Minecraft implements Runnable {
 	
 	public int displayWidth;
 	public int displayHeight;
-	private Timer timer = new Timer(20.0F);
+	public Timer timer = new Timer(20.0F);
 	
 	public WorldClient theWorld;
 	public RenderGlobal renderGlobal;

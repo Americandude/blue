@@ -44,6 +44,7 @@ public class Client {
         modules.add(new AutoClickerNew());
         modules.add(new Nametags());
         modules.add(new Reach());
+        modules.add(new ESP());
 
         clickGUI = new ClickGUI();
         speed = new ClickGUI();

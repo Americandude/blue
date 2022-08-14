@@ -6,7 +6,6 @@ import org.teavm.jso.dom.events.MouseEvent;
 
 import de.Hero.settings.Setting;
 import de.Hero.settings.SettingsManager;
-import javafx.scene.input.MouseButton;
 import net.lax1dude.eaglercraft.EaglerAdapter;
 import net.minecraft.client.Minecraft;
 import nitwit.Client;
@@ -35,7 +34,7 @@ public class AutoClickerNew extends Module {
             protected void onChanged(final Object oldValue, final Object newValue) {
                 int minCPS = AutoClickerNew.this.minCPSValue.asInteger();
                 if (minCPS > Integer.parseInt(String.valueOf(newValue))) {
-                    this.setValue(minCPS);
+                    this.setValue(Client.settingsManager.getSettingByName("Min CPS").getValDouble());
                 }
             }
         };
@@ -45,7 +44,7 @@ public class AutoClickerNew extends Module {
             protected void onChanged(final Object oldValue, final Object newValue) {
                 int maxCPS = AutoClickerNew.this.maxCPSValue.asInteger();
                 if (maxCPS < Integer.parseInt(String.valueOf(newValue))) {
-                    this.setValue(maxCPS);
+                    this.setValue(Client.settingsManager.getSettingByName("Max CPS").getValDouble());
                 }
             }
         };
