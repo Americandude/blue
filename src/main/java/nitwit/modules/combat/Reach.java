@@ -28,7 +28,7 @@ public class Reach extends Module{
 
         ArrayList<String> options = new ArrayList<>();
             options.add("Reach");
-            Client.settingsManager.rSetting(new Setting("Reach", this, 3.23, 3, 6, false));
+            Client.settingsManager.rSetting(new Setting("Reach", this, 3.23, 3, 20, false));
             Client.settingsManager.rSetting(new Setting("Misplace", this, true));
     }  
 
