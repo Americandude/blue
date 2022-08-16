@@ -37,12 +37,8 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [ ] Add Aimassist
 - [x] Add Reach
 - [x] Add Velocity
-- [ ] Add FastBow
-- [ ] Add Regen
 - [x] Add more movement modules
 - [ ] Add rainbow wave thing to arraylist
-- [ ] Improve ui
-- [ ] Finish Client
 - [ ] Start making a blatant client
 
 
@@ -70,32 +66,25 @@ Velocity: V
 ClickGUI: P
 
 Autoclicker: O
-AutoclickerNew: I
+AutoclickerNew: none
+
+Reach: none
+
+ESP: none
+
+AutoWalk: none
+
+Nametags: none
 
 ## Installation
-
-### small brain installation
-
-1. just download what's in the javascript folder, delete the loop that checks for local file opening, and then run index.html
-
-### big brain installation
 
 1. Install vscode, eclipse, IntelliJ IDEA, or the IDE of your choice.
 
 
-2. Run `git clone https://github.com/ThisIsALegitUsername/ghost-client-v2.git`
+2. If you're using vscode, install the extension "five server," go to the javascript folder, right click on `index.html`, and click "Open with Five Server"
 
 
-2a. **Only applies if you're using linux** Run `chmod +x gradlew`
-
-
-3. Run `./gradlew teavm`
-
-
-4. If you're using vscode, install the extension "live server," go to the javascript folder, right click on `index.html`, and click "Open with Live Server"
-
-
-4a. I'm unsure about the process for other IDES, but a surefire way to open is to go into the javascript folder, click on `index.html`, remove the loop that checks for local file opening, download everything in javascript and paste it into the same folder, and finally open `index.html`.
+3. Go to http://localhost:5555
 
 
 ## Progress Log

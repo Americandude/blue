@@ -2,8 +2,6 @@ package nitwit.modules.combat;
 
 import java.util.ArrayList;
 
-import org.teavm.jso.dom.events.MouseEvent;
-
 import de.Hero.settings.Setting;
 import de.Hero.settings.SettingsManager;
 import net.lax1dude.eaglercraft.EaglerAdapter;
