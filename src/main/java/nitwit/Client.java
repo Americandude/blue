@@ -45,6 +45,7 @@ public class Client {
         modules.add(new Nametags());
         modules.add(new Reach());
         modules.add(new ESP());
+        modules.add(new AimAssist());
 
         clickGUI = new ClickGUI();
         speed = new ClickGUI();
