@@ -1,6 +1,8 @@
 # NitClient
 
-name under consideration
+
+### **CLIENT IS ACTUAL SHIT, BYPASSES ABSOLUTELY NO ANTICHEATS, ONLY USE ON ANARCHY SERVERS.**
+
 
 ## Overview
 
