@@ -17,6 +17,11 @@ import nitwit.modules.util.valuesys.IntegerValue;
 @SuppressWarnings("all")
 public class AutoClickerNew extends Module {
 
+
+    /*
+     * Define variables
+     */
+
     private final IntegerValue maxCPSValue;
     private final IntegerValue minCPSValue;
     private final BoolValue leftValue;
@@ -37,7 +42,7 @@ public class AutoClickerNew extends Module {
             }
         };
         
-        this.minCPSValue = new IntegerValue("MinCPS", 112, 1, 20) {
+        this.minCPSValue = new IntegerValue("MinCPS", 12, 1, 20) {
             @Override
             protected void onChanged(final Object oldValue, final Object newValue) {
                 int maxCPS = AutoClickerNew.this.maxCPSValue.asInteger();
@@ -51,8 +56,6 @@ public class AutoClickerNew extends Module {
         this.leftDelay = TimeUtils.randomClickDelay(this.minCPSValue.asInteger(), this.maxCPSValue.asInteger());
 
         ArrayList<String> options = new ArrayList<>();
-        options.add("Min CPS");
-        options.add("Max CPS");
         Client.settingsManager.rSetting(new Setting("Min CPS", this, 1, 1, 20, false));
         Client.settingsManager.rSetting(new Setting("Max CPS", this, 2, 1, 20, false));
     }

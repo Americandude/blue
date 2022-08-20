@@ -21,7 +21,7 @@ import nitwit.modules.Module;
 import nitwit.modules.util.valuesys.Value;
 
 @SuppressWarnings("all")
-public class KillAura extends Module{
+public class KillAura extends Module {
 
     private EntityLiving target;
     private long current, last;
@@ -29,7 +29,7 @@ public class KillAura extends Module{
     private float yaw, pitch;
     private boolean others;
 
-    public KillAura(){
+    public KillAura() {
         super("KillAura", 0x25, Category.Combat);
 
         ArrayList<String> options = new ArrayList<>();
@@ -45,24 +45,30 @@ public class KillAura extends Module{
     }
 
     private boolean canAttack(EntityLiving player) {
-        if(player instanceof EntityPlayer || player instanceof EntityAnimal || player instanceof EntityMob || player instanceof EntityVillager) {
-            if (player instanceof EntityPlayer && !Client.instance.settingsManager.getSettingByName("Players").getValBoolean())
+        if (player instanceof EntityPlayer || player instanceof EntityAnimal || player instanceof EntityMob
+                || player instanceof EntityVillager) {
+            if (player instanceof EntityPlayer
+                    && !Client.instance.settingsManager.getSettingByName("Players").getValBoolean())
                 return false;
-                    if (player instanceof EntityAnimal && !Client.instance.settingsManager.getSettingByName("Animals").getValBoolean())
-                        return false;
-                            if (player instanceof EntityMob && !Client.instance.settingsManager.getSettingByName("Mobs").getValBoolean())
-                                return false;
+            if (player instanceof EntityAnimal
+                    && !Client.instance.settingsManager.getSettingByName("Animals").getValBoolean())
+                return false;
+            if (player instanceof EntityMob
+                    && !Client.instance.settingsManager.getSettingByName("Mobs").getValBoolean())
+                return false;
         }
-        if(player.isInvisible() && !Client.instance.settingsManager.getSettingByName("Invisibles").getValBoolean())
+        if (player.isInvisible() && !Client.instance.settingsManager.getSettingByName("Invisibles").getValBoolean())
             return false;
-                return player != mc.thePlayer && player.isEntityAlive() && mc.thePlayer.getDistanceToEntity(player) <= mc.playerController.getBlockReachDistance() && player.ticksExisted > Client.instance.settingsManager.getSettingByName("Existed").getValDouble();
+        return player != mc.thePlayer && player.isEntityAlive()
+                && mc.thePlayer.getDistanceToEntity(player) <= mc.playerController.getBlockReachDistance()
+                && player.ticksExisted > Client.instance.settingsManager.getSettingByName("Existed").getValDouble();
     }
 
     private void attack(Entity entity) {
-        for(int i = 0; i < Client.instance.settingsManager.getSettingByName("particle multiplier").getValDouble(); i++)
+        for (int i = 0; i < Client.instance.settingsManager.getSettingByName("particle multiplier").getValDouble(); i++)
             mc.thePlayer.onCriticalHit(entity);
-            mc.thePlayer.swingItem();
-            mc.playerController.attackEntity(mc.thePlayer, entity);
+        mc.thePlayer.swingItem();
+        mc.playerController.attackEntity(mc.thePlayer, entity);
     }
 
     private void updateTime() {
@@ -103,26 +109,29 @@ public class KillAura extends Module{
         double diffY = (y + .5D) / 2D - (mc.thePlayer.posY + mc.thePlayer.getEyeHeight());
         double diffZ = z + .5D - mc.thePlayer.posZ;
         double dist = MathHelper.sqrt_double(diffX * diffX + diffZ * diffZ);
-        float yaw = (float)(Math.atan2(diffZ, diffX) * 180D / Math.PI) - 90F;
-        float pitch = (float)-(Math.atan2(diffY, dist) * 180D / Math.PI);
+        float yaw = (float) (Math.atan2(diffZ, diffX) * 180D / Math.PI) - 90F;
+        float pitch = (float) -(Math.atan2(diffY, dist) * 180D / Math.PI);
         return new float[] { yaw, pitch };
     }
 
-    public void onEvent(Event e){
-        if(e instanceof EventMotion){
-            if(e.isPre()){
+    public void onEvent(Event e) {
+        if (e instanceof EventMotion) {
+            if (e.isPre()) {
                 target = getClosest(mc.playerController.getBlockReachDistance());
-                    if(target == null)
-                        return;
-                        updateTime();
-                            yaw = mc.thePlayer.rotationYaw;
-                            pitch = mc.thePlayer.rotationPitch;
-                            boolean block = target != null && Client.instance.settingsManager.getSettingByName("AutoBlock").getValBoolean() && mc.thePlayer.getHeldItem() != null && mc.thePlayer.getHeldItem().getItem() != null && mc.thePlayer.getHeldItem().getItem() instanceof ItemSword;
-                            if(block && target.getDistanceToEntity(mc.thePlayer) < 8F)
-                                mc.playerController.sendUseItem(mc.thePlayer, mc.theWorld, mc.thePlayer.inventory.getCurrentItem());
-                                    if(current - last > 1000 / delay) {
-                                        attack(target);
-                                            resetTime();
+                if (target == null)
+                    return;
+                updateTime();
+                yaw = mc.thePlayer.rotationYaw;
+                pitch = mc.thePlayer.rotationPitch;
+                boolean block = target != null
+                        && Client.instance.settingsManager.getSettingByName("AutoBlock").getValBoolean()
+                        && mc.thePlayer.getHeldItem() != null && mc.thePlayer.getHeldItem().getItem() != null
+                        && mc.thePlayer.getHeldItem().getItem() instanceof ItemSword;
+                if (block && target.getDistanceToEntity(mc.thePlayer) < 8F)
+                    mc.playerController.sendUseItem(mc.thePlayer, mc.theWorld, mc.thePlayer.inventory.getCurrentItem());
+                if (current - last > 1000 / delay) {
+                    attack(target);
+                    resetTime();
                 }
             }
         }

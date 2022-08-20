@@ -34,9 +34,10 @@ public class AimAssist extends Module {
         if (e instanceof EventUpdate) {
             if (e.isPre()) {
 
+
+                target = getClosest(mc.playerController.getBlockReachDistance());
                 final double range = Client.settingsManager.getSettingByName("Range").getValDouble();
                 final double strength = Client.settingsManager.getSettingByName("Strength").getValDouble();
-                target = getClosest(range);
                 yaw = mc.thePlayer.rotationYaw;
                 pitch = mc.thePlayer.rotationPitch;
 
@@ -92,6 +93,8 @@ public class AimAssist extends Module {
 
     private float[] getRotations() {
 
+        target = getClosest(mc.playerController.getBlockReachDistance());
+
         if (target != null) {
 
             double var4 = (target.posX - (target.lastTickPosX - target.posX)) + 0.01 - mc.thePlayer.posX;
@@ -114,6 +117,7 @@ public class AimAssist extends Module {
             pitch = fixedRotations[1];
 
             pitch = MathHelper.clamp_float(pitch, -90.0F, 90.0F);
+            
         }
 
         return new float[] { yaw, pitch };
