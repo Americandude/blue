@@ -9,10 +9,10 @@
 NitClient is a ghost client for Eaglercraft, it's still in development.
 
 
-Client created by Nitwit, discord tag hooman#1196.
+Client created by Bongo Cat, discord tag Bongo Cat#1100.
 
 
-Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/lax1dude/eaglercraft
+Eaglercraft created by cluefuhfake, check his repo for discord: https://github.com/lax1dude/eaglercraft
 
 
 ## Checklist
@@ -41,6 +41,7 @@ Eaglercraft created by LAX1DUDE, check his repo for discord: https://github.com/
 - [x] Add Velocity
 - [x] Add more movement modules
 - [x] Add rainbow wave thing to arraylist
+- [ ] Add superherofx
 - [ ] Start making a blatant client
 
 
@@ -94,5 +95,6 @@ Feel free to make a pull request, it's best if you add me on discord and tell me
 
 **Client status**:  
 - [ ] Broken
-- [x] Working
+- [ ] Working
 - [ ] N/A
+- [X] dehouidqfrgy8e4opqedg
